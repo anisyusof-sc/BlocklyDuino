@@ -172,15 +172,22 @@ function init() {
   if(dest){
     load_by_url(dest);
   }
+  
+  var x = document.getElementsByClassName("blocklyToolboxDiv");
+  for (i = 0; i < x.length; i++) {
+      x[i].style.backgroundColor = "#ff6f3f";
+	  x[i].style.fontFamily = "Comic Sans MS";
+	  x[i].style.border = "border: 1px solid black;";
+  }
 }
   </script>
   <style>
     html, body {
       height: 100%;
+	  font-family:Comic Sans MS;
     }
     body {
-      background-color: #fff;
-      font-family: sans-serif;
+      background-color: #ffcc33;
       margin: 0;
       overflow: hidden;
     }
@@ -196,16 +203,17 @@ function init() {
       border: 1px solid #ccc;
     }
     td.tabon {
-      border-bottom-color: #ddd !important;
-      background-color: #ddd;
+      border-bottom-color: black !important;
+      background-color: #ff6633;
       padding: 5px 19px;
     }
     td.taboff {
+	  background-color: #ffa98d;
       cursor: pointer;
       padding: 5px 19px;
     }
     td.taboff:hover {
-      background-color: #eee;
+      background-color: #fe8f6b;
     }
     td.tabmin {
       border-top-style: none !important;
@@ -236,6 +244,10 @@ function init() {
       padding: 1ex;
       position: absolute;
       direction: ltr;
+	  background-color:#dd;
+	  color:black;
+	  font-size:120%;
+	  font-family:"Courier New", "monospace";
     }
     pre.content {
       overflow: scroll;
@@ -250,15 +262,15 @@ function init() {
       resize: none;
       outline: none;
       border: none;
-      font-family: monospace;
+      font-family:"Courier New", "monospace";
       overflow: scroll;
     }
     button {
       padding: 1px 1em;
-      font-size: 90%;
+      font-size: 120%;
       border-radius: 4px;
-      border: 1px solid #ddd;
-      background-color: #eee;
+      border: 1px solid black;
+      background-color: #5ca4a9;
       color: black;
     }
     button.launch {
@@ -278,7 +290,7 @@ function init() {
   <table height="100%" width="100%">
     <tr>
       <td>
-        <h1><a href="https://github.com/gasolin/BlocklyDuino/wiki">BlocklyDuino</a> &gt; web-based visual programming editor for arduino</h1>
+        <h1><a href="https://github.com/gasolin/BlocklyDuino/wiki">BlocklyDuino</a> &gt; Visual Programming Editor for Arduino</h1>
       </td>
     </tr>
     <tr>
