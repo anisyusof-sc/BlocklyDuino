@@ -6,12 +6,12 @@
   <script type="text/javascript" src="../../blocks_compressed.js"></script>
   <script type="text/javascript" src="../../arduino_compressed.js"></script>
   <script type="text/javascript" src="../../msg/js/en.js"></script>
-  <script type="text/javascript" src="Blob.js"></script>
-  <script type="text/javascript" src="spin.js"></script>
-  <script type="text/javascript" src="FileSaver.min.js"></script>
-  <script type="text/javascript" src="blockly_helper.js"></script>
+  <script type="text/javascript" src="js/Blob.js"></script>
+  <script type="text/javascript" src="js/spin.js"></script>
+  <script type="text/javascript" src="js/FileSaver.min.js"></script>
+  <script type="text/javascript" src="js/blockly_helper.js"></script>
   <script>
-
+	
 /**
  * List of tab names.
  * @private
@@ -339,7 +339,9 @@ function init() {
     </tr>
   </table>
   <div id="content_blocks" class="content"></div>
-  <textarea id="content_arduino" class="content" readonly wrap="off"></textarea>
+  
+  	<textarea id="content_arduino" class="content" readonly wrap="off"></textarea>
+
   <textarea id="content_xml" class="content" wrap="off"></textarea>
 
   <xml id="toolbox" style="display: none">
@@ -525,6 +527,11 @@ function init() {
 		   <block type="read_prox_sense"></block>
 		   <block type="line_sense"></block>
 		   <block type="read_line_sense"></block>
+		</category>
+		<category name="LED Light">
+            <block type="led_red"></block>
+            <block type="led_yellow"></block>
+            <block type="led_green"></block>
 		</category>
 		<category name="Input&#47;Output">
            <block type="button_a"></block>
