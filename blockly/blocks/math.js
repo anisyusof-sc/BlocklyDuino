@@ -170,7 +170,6 @@ Blockly.Blocks['math_constant'] = {
     var CONSTANTS =
         [['\u03c0', 'PI'],
          ['e', 'E'],
-         ['\u03c6', 'GOLDEN_RATIO'],
          ['sqrt(2)', 'SQRT2'],
          ['sqrt(\u00bd)', 'SQRT1_2'],
          ['\u221e', 'INFINITY']];

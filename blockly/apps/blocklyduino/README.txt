@@ -1,4 +1,4 @@
-BlocklyDuino
+BlocklyDuino (Zumo32U4)
 =======================
 
 Introduction
@@ -8,10 +8,13 @@ BlocklyDuino is based on Blockly, the web-based, graphical programming editor. P
 
 BlocklyDuino also support Grove blocks to easily get started with microcontroller-based experimentation and learning.
 
+This version of BlocklyDuino is custom built to use on Zumo32U4 sumo robot from Pololu. This allows easy interaction with onboard hardwares.
+
 
 * Blockly https://developers.google.com/blockly/
 * Arduino http://www.arduino.cc/
 * Grove http://www.seeedstudio.com/wiki/GROVE_-_Starter_Kit_V1.1b
+* Zumo 32U4 robot https://www.pololu.com/category/170/zumo-32u4-robot
 
 Install
 -----------------
@@ -20,7 +23,7 @@ BlocklyDuino is a web tool. You can give it a try at http://www.gasolin.idv.tw/p
 
 If you want to install it locally. Checkout Blockly and BlocklyDuino from github.
 
-$ git clone https://github.com/gasolin/BlocklyDuino.git
+$ git clone https://github.com/taipan541/BlocklyDuino.git
 
 
 Put blockly into a web server and open the url like localhost/public/blockly/demos/blocklyduino/index.html for use.
@@ -35,7 +38,7 @@ Usage (3 Step)
 Credit
 -----------------
 
-Fred Lin is the creator of BlocklyDuino.
+Fred Lin is the creator of BlocklyDuino. This version of BlocklyDuino is an extended version created by taipan541.
 
 Thanks Neil Fraser, Q.Neutron from Blockly http://code.google.com/p/blockly/
 Arduino and Seeeduino guys for Arduino and Grove blocks.

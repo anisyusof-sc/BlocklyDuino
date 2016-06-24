@@ -6,7 +6,7 @@ BlocklyDuino is based on [Blockly](https://developers.google.com/blockly/), the 
 
 BlocklyDuino also support [Grove](http://www.seeedstudio.com/wiki/GROVE_System) blocks to easily get started with microcontroller-based experimentation and learning.
 
-[We also have Google+ Page](https://plus.google.com/111979846292233941175).
+This version of BlocklyDuino is custom built to use on [Zumo32U4](https://www.pololu.com/category/170/zumo-32u4-robot) sumo robot from Pololu. This allows easy interaction with onboard hardwares.
 
 ### Features
 
@@ -14,18 +14,10 @@ BlocklyDuino also support [Grove](http://www.seeedstudio.com/wiki/GROVE_System) 
 * Generate fully compatible Arduino source code
 * Interactive Arduino board with 10+ predefined Grove sensor blocks
 * Load different on-site examples with url parameters
+* Drag and drop blocks for Zumo 32U4 Robot
 
 ### Demo
-
-BlocklyDuino is a web tool. You can give it a try at
-[Web](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/) to see the working BlocklyDuino.
-
-You can link directly to examples
-* [demo 1](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/index.html?url=examples/blink.xml) make default LED blink
-* [demo 2](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/index.html?url=examples/servo_potentio.xml) control servo with potentio rotator
-* [demo 3](http://blocklyduino.github.io/BlocklyDuino/blockly/apps/blocklyduino/index.html?url=examples/click_color.xml) click button to change LED colors
-
-Or watch the [video demos](http://www.youtube.com/watch?v=_swiyXcUvNY)
+-
 
 ### Run locally on your web browser
 
@@ -58,12 +50,9 @@ OR (if running `ino_web_server.py`):
 1. Open browser to BlocklyDuino, drag and drop blocks to make an Arduino program.
 2. Select the 'Arduino' tab and press the 'Upload' button. (press the 'Reset' button to upload an empty program)
 
-### ChangeLog
-
-Check changelog [here](https://github.com/BlocklyDuino/BlocklyDuino/blob/master/CHANGELOG.txt)
-
 ### Authors and Contributors
-Fred Lin (@gasolin) .
+Fred Lin (@gasolin)
+@taipan541
 
 Thanks Neil Fraser, Q.Neutron from Blockly https://developers.google.com/blockly/
 Thanks Dale Low (gumbypp) for contribute the python server to pipe BlocklyDuino source to arduino board.
@@ -73,7 +62,9 @@ The project is also inspired by [arduiblock](https://github.com/taweili/ardubloc
 
 ### License
 
-Copyright (C) 2012~2015 Fred Lin gasolin+blockly@gmail.com
+Copyright (C) 2012~2016
+Original Developer: Fred Lin gasolin+blockly@gmail.com
+Extension Developer: taipan541
 
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
