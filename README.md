@@ -17,7 +17,7 @@ This version of BlocklyDuino is custom built to use on [Zumo32U4](https://www.po
 * Drag and drop blocks for Zumo 32U4 Robot
 
 ### Demo
--
+Visit our website at http://relsig.com/blocklyduino/apps/blocklyduino/index.html
 
 ### Run locally on your web browser
 
