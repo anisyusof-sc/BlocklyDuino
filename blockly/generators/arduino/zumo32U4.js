@@ -7,7 +7,7 @@ Blockly.Arduino['output_leftzmotor'] = function() {
   var dropdown_direction = this.getFieldValue('Direction');
   var value_speed = Blockly.Arduino.valueToCode(this, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
 
-  Blockly.Arduino.definitions_['define_Zumo32U4Motors'] = '#include <Zumo32U4Motors.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4Motors', '#include <Zumo32U4Motors.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4Motors'] = 'Zumo32U4Motors motors;';
 
   if(dropdown_direction == "FORWARD"){
@@ -23,7 +23,7 @@ Blockly.Arduino['output_rightzmotor'] = function() {
   var dropdown_direction = this.getFieldValue('Direction');
   var value_speed = Blockly.Arduino.valueToCode(this, 'SPEED', Blockly.Arduino.ORDER_ATOMIC);
 
-  Blockly.Arduino.definitions_['define_Zumo32U4Motors'] = '#include <Zumo32U4Motors.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4Motors', '#include <Zumo32U4Motors.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4Motors'] = 'Zumo32U4Motors motors;';
 
 
@@ -42,7 +42,7 @@ Blockly.Arduino['output_bothzmotor'] = function() {
   var value_speed_L = Blockly.Arduino.valueToCode(this, 'SPEED_L', Blockly.Arduino.ORDER_ATOMIC);
   var value_speed_R = Blockly.Arduino.valueToCode(this, 'SPEED_R', Blockly.Arduino.ORDER_ATOMIC);
 
-  Blockly.Arduino.definitions_['define_Zumo32U4Motors'] = '#include <Zumo32U4Motors.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4Motors', '#include <Zumo32U4Motors.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4Motors'] = 'Zumo32U4Motors motors;';
 
   if(dropdown_direction_L == "BACKWARD"){
@@ -62,7 +62,7 @@ return code;
 Blockly.Arduino['zprox_sense'] = function() {
   var dropdown_sensor = this.getFieldValue('SENSOR');
 
-  Blockly.Arduino.definitions_['define_Zumo32U4ProximitySensors'] = '#include <Zumo32U4ProximitySensors.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4ProximitySensors', '#include <Zumo32U4ProximitySensors.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4ProximitySensors'] = 'Zumo32U4ProximitySensors proxSensors;';
   Blockly.Arduino.setups_['setup_init_sensors'] = 'proxSensors.initThreeSensors();\n';
 
@@ -92,7 +92,7 @@ Blockly.Arduino['read_prox_sense'] = function() {
 Blockly.Arduino['line_sense'] = function() {
   var dropdown_sensor = this.getFieldValue('SENSOR');
 
-  Blockly.Arduino.definitions_['define_Zumo32U4LineSensors'] = '#include <Zumo32U4LineSensors.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4LineSensors', '#include <Zumo32U4LineSensors.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4LineSensors'] = 'Zumo32U4LineSensors lineSensors;';
   Blockly.Arduino.definitions_['arr_Zumo32U4LineSensors'] = 'uint16_t lineSensorValues[5];\n';
   Blockly.Arduino.setups_['setup_init_sensors_line'] = 'lineSensors.initFiveSensors();\n';
@@ -125,7 +125,7 @@ Blockly.Arduino['read_line_sense'] = function() {
 /* generate code for Button reading */
 Blockly.Arduino['button_a'] = function() {
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_ButtonA'] = 'Zumo32U4ButtonA buttona;';
 
   var code = 'buttona.getSingleDebouncedPress()';
@@ -135,7 +135,7 @@ Blockly.Arduino['button_a'] = function() {
 
 Blockly.Arduino['button_b'] = function() {
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_ButtonB'] = 'Zumo32U4ButtonB buttonb;';
 
   var code = 'buttonb.getSingleDebouncedPress()';
@@ -145,7 +145,7 @@ Blockly.Arduino['button_b'] = function() {
 
 Blockly.Arduino['button_c'] = function() {
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_ButtonC'] = 'Zumo32U4ButtonC buttonc;';
 
   var code = 'buttonc.getSingleDebouncedPress()';
@@ -156,21 +156,21 @@ Blockly.Arduino['button_c'] = function() {
 /* generate code for LED on or off */
 Blockly.Arduino['led_red'] = function() {
   var statusLed = this.getFieldValue('status');
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   var code = 'ledRed(' + statusLed + ');\n';
   
   return code;
 };
 Blockly.Arduino['led_yellow'] = function() {
   var statusLed = this.getFieldValue('status');
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   var code = 'ledYellow(' + statusLed + ');\n';
   
   return code;
 };
 Blockly.Arduino['led_green'] = function() {
   var statusLed = this.getFieldValue('status');
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   var code = 'ledGreen(' + statusLed + ');\n';
   
   return code;
@@ -178,7 +178,7 @@ Blockly.Arduino['led_green'] = function() {
 
 Blockly.Arduino['lcd_clear'] = function() {
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_LCD'] = 'Zumo32U4LCD lcd;';
 
   var code = 'lcd.clear();\n';
@@ -188,7 +188,7 @@ Blockly.Arduino['lcd_clear'] = function() {
 Blockly.Arduino['lcd_string'] = function() {
   var text_lcd_string = this.getFieldValue('LCD_STRING');
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_LCD'] = 'Zumo32U4LCD lcd;';
 
   var code = 'lcd.print("'+text_lcd_string+'");\n';
@@ -198,7 +198,7 @@ Blockly.Arduino['lcd_string'] = function() {
 Blockly.Arduino['lcd_number'] = function() {
   var value_lcd_number = Blockly.Arduino.valueToCode(this, 'lcd_number', Blockly.Arduino.ORDER_ATOMIC);
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_LCD'] = 'Zumo32U4LCD lcd;';
 
   var code = 'lcd.print('+value_lcd_number+');\n';
@@ -209,7 +209,7 @@ Blockly.Arduino['lcd_string_location'] = function() {
   var column = this.getFieldValue('COLUMN');
   var row = this.getFieldValue('ROW');
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_LCD'] = 'Zumo32U4LCD lcd;';
 	
   var code = 'lcd.gotoXY(' + column + ', ' + row + ');\n';
@@ -220,7 +220,7 @@ Blockly.Arduino['lcd_location'] = function() {
   var column = this.getFieldValue('COLUMN');
   var row = this.getFieldValue('ROW');
 
-  Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
   Blockly.Arduino.definitions_['var_Zumo32U4_LCD'] = 'Zumo32U4LCD lcd;';
 	
   var code = 'lcd.gotoXY(' + column + ', ' + row + ');\n';
@@ -228,7 +228,7 @@ Blockly.Arduino['lcd_location'] = function() {
 };
 /* generate code for Buzzer */
 Blockly.Arduino['buzzer_play'] = function() {
-    Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+	Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
     Blockly.Arduino.definitions_['var_Zumo32U4_buzzer'] = 'Zumo32U4Buzzer buzzer;';
 	
 	var dropdown_note = this.getFieldValue('NOTE');
@@ -254,10 +254,19 @@ Blockly.Arduino['buzzer_play'] = function() {
 	return code;
 };
 Blockly.Arduino['buzzer_stop'] = function() {
-    Blockly.Arduino.definitions_['define_Zumo32U4'] = '#include <Zumo32U4.h>';
+	Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
     Blockly.Arduino.definitions_['var_Zumo32U4_buzzer'] = 'Zumo32U4Buzzer buzzer;';
 	
     var code = 'buzzer.stopPlaying();\n';
 	
     return code;
+};
+
+
+Blockly.Arduino['battery_milivolts'] = function(block) {
+  var variable_batterylevel = Blockly.Arduino.variableDB_.getName(block.getFieldValue('batteryLevel'), Blockly.Variables.NAME_TYPE);
+  Blockly.Arduino.addInclude('define_Zumo32U4', '#include <Zumo32U4.h>');
+  var code = 'uint16_t '+variable_batterylevel+' = readBatteryMillivolts();';
+
+  return [code, Blockly.Arduino.ORDER_ATOMIC];
 };

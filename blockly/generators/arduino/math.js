@@ -356,6 +356,7 @@ Blockly.Arduino['math_random_int'] = function(block) {
       'math_random_int', Blockly.Generator.NAME_TYPE);
   Blockly.Arduino.math_random_int.random_function = functionName;
   var func = [
+	  '/n/n',
       'int ' + Blockly.Arduino.DEF_FUNC_NAME + '(int min, int max) {',
       '  if (min > max) {',
       '    // Swap min and max to ensure min is smaller.',

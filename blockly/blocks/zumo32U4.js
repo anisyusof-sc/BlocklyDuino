@@ -13,6 +13,7 @@ To use Zumo 32U4 blocks in Blocklyduino you need 4 things:
 		   <block type="read_prox_sense"></block>
 		   <block type="line_sense"></block>
 		   <block type="read_line_sense"></block>
+		   <block type="battery_milivolts"></block>
            <block type="button_a"></block>
            <block type="button_b"></block>
            <block type="button_c"></block>
@@ -53,7 +54,7 @@ Blockly.Blocks['output_leftzmotor'] = {
     this.setNextStatement(true, null);
     this.setColour(30);
     this.setTooltip('Set left motor speed (0-400) and direction');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_motors.html');
   }
 };
 
@@ -70,7 +71,7 @@ Blockly.Blocks['output_rightzmotor'] = {
     this.setNextStatement(true);
     this.setColour(30);
     this.setTooltip('Set left motor speed (0-400) and direction');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_motors.html');
   }
 };
 /* Edit both motors block here:
@@ -97,7 +98,7 @@ Blockly.Blocks['output_bothzmotor'] = {
     this.setNextStatement(true, null);
     this.setColour(30);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_motors.html');
   }
 };
 
@@ -115,7 +116,7 @@ Blockly.Blocks['zprox_sense'] = {
     this.setOutput(true, "Number");
     this.setColour(10);
     this.setTooltip('returns a reflected IR brightness level with front IR LEDS on: 4(low), 15, 32, 55, 85, 120(hi).');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_proximity_sensors.html');
   }
 };
 /* Edit read proximity sensor block here:
@@ -129,7 +130,7 @@ Blockly.Blocks['read_prox_sense'] = {
     this.setNextStatement(true, null);
     this.setColour(10);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_proximity_sensors.html');
   }
 };
 /* Edit Line sensor block here:
@@ -146,7 +147,7 @@ Blockly.Blocks['line_sense'] = {
     this.setOutput(true, "Number");
     this.setColour(15);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_line_sensors.html');
   }
 };
 /* Edit Line sensor block here:
@@ -160,7 +161,7 @@ Blockly.Blocks['read_line_sense'] = {
     this.setNextStatement(true, null);
     this.setColour(15);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_line_sensors.html');
   }
 };
 /* Edit Button block here:
@@ -173,7 +174,7 @@ Blockly.Blocks['button_a'] = {
     this.setOutput(true, "Boolean");
     this.setColour(10);
     this.setTooltip('returns a true or false');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_button_a.html');
   }
 };
 Blockly.Blocks['button_b'] = {
@@ -183,7 +184,7 @@ Blockly.Blocks['button_b'] = {
     this.setOutput(true, "Boolean");
     this.setColour(10);
     this.setTooltip('returns a true or false');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_button_b.html');
   }
 };
 Blockly.Blocks['button_c'] = {
@@ -193,7 +194,7 @@ Blockly.Blocks['button_c'] = {
     this.setOutput(true, "Boolean");
     this.setColour(10);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_button_c.html');
   }
 };
 
@@ -211,7 +212,7 @@ Blockly.Blocks['led_red'] = {
     this.setNextStatement(true, null);
     this.setColour(0);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/_zumo32_u4_8h.html#ae6ec5117b26ffaaa1b81c8c8b34426e1');
   }
 };
 
@@ -226,7 +227,7 @@ Blockly.Blocks['led_yellow'] = {
     this.setNextStatement(true, null);
     this.setColour(0);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/_zumo32_u4_8h.html#a7528cb14b314ccde63c94049402d01c6');
   }
 };
 Blockly.Blocks['led_green'] = {
@@ -240,7 +241,7 @@ Blockly.Blocks['led_green'] = {
     this.setNextStatement(true, null);
     this.setColour(0);
     this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/_zumo32_u4_8h.html#a22e68694b618fe149ed42d76e96597ca');
   }
 };
 Blockly.Blocks['lcd_clear'] = {
@@ -251,7 +252,7 @@ Blockly.Blocks['lcd_clear'] = {
     this.setNextStatement(true);
     this.setColour(10);
     this.setTooltip('returns a true or false');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_l_c_d.html');
   }
 };
 /* Edit LCD string block here: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#a7yndq
@@ -267,7 +268,7 @@ Blockly.Blocks['lcd_string'] = {
     this.setNextStatement(true);
     this.setColour(10);
     this.setTooltip('prints string to LCD screen');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_l_c_d.html');
   }
 };
 
@@ -282,7 +283,7 @@ Blockly.Blocks['lcd_number'] = {
     this.setNextStatement(true);
     this.setColour(10);
     this.setTooltip('prints number to LCD screen');
-    this.setHelpUrl('http://www.example.com/');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_l_c_d.html');
   }
 };
 /* Edit LCD string block here: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#mkpfvz
@@ -301,8 +302,8 @@ Blockly.Blocks['lcd_string_location'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(10);
-    this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setTooltip('Prints text at target location on LCD');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_l_c_d.html');
   }
 };
 /* Edit LCD string block here: https://blockly-demo.appspot.com/static/demos/blockfactory/index.html#9erx46
@@ -318,8 +319,8 @@ Blockly.Blocks['lcd_location'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(10);
-    this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setTooltip('Moves the cursor according to the location specified.');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_l_c_d.html');
   }
 };
 
@@ -346,8 +347,8 @@ Blockly.Blocks['buzzer_play'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(30);
-    this.setTooltip('');
-    this.setHelpUrl('http://www.example.com/');
+    this.setTooltip('Plays the buzzer according to its Note, Octave, Duration, Volume');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_buzzer.html');
   }
 };
 /* Edit buzzer block here:
@@ -360,6 +361,18 @@ Blockly.Blocks['buzzer_stop'] = {
     this.setPreviousStatement(true, null);
     this.setNextStatement(true, null);
     this.setColour(30);
+    this.setTooltip('Stops playing the buzzer.');
+    this.setHelpUrl('https://pololu.github.io/zumo-32u4-arduino-library/class_zumo32_u4_buzzer.html');
+  }
+};
+
+Blockly.Blocks['battery_milivolts'] = {
+  init: function() {
+    this.appendDummyInput()
+        .appendField("Read Battery Milivolts")
+        .appendField(new Blockly.FieldVariable("batteryLevel"), "batteryLevel");
+    this.setOutput(true, "uint16_t");
+    this.setColour(120);
     this.setTooltip('');
     this.setHelpUrl('http://www.example.com/');
   }

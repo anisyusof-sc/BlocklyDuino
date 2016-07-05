@@ -193,7 +193,7 @@ Blockly.Arduino.finish = function(code) {
   
   var allDefs = includes.join('\n') + variables.join('\n') +
       definitions.join('\n') + functions.join('\n') + '\n\n';
-  var setup = 'void setup() {\n' + setups.join('\n  ') + '\n}\n\n';
+  var setup = 'void setup() {\n ' + setups.join('\n  ') + '\n}\n\n';
   var loop = 'void loop() {\n  ' + code.replace(/\n/g, '\n  ') + '\n}';
   return allDefs + setup + loop;
 };
