@@ -298,7 +298,7 @@ function init() {
 				  <td>
 					  <h1> <b> Visual Programming Editor for Arduino </b> </h1>
 					  &nbsp; powered by <a href="https://github.com/BlocklyDuino/BlocklyDuino">BlocklyDuino</a> <br/>
-					  &nbsp; version 0.1.4 beta
+					  &nbsp; version 0.1.5 beta
 				  </td>
 				  <td>
 					  <br/><br/><a href="https://github.com/taipan541/BlocklyDuino" target="_blank"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://camo.githubusercontent.com/652c5b9acfaddf3a9c326fa6bde407b87f7be0f4/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6f72616e67655f6666373630302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_orange_ff7600.png"></a>
@@ -397,7 +397,7 @@ function init() {
         </value>
       </block>
       <block type="math_round"></block>
-      <block type="math_on_list"></block>
+     <!-- <block type="math_on_list"></block> TODO: function not implemented -->
       <block type="math_modulo"></block>
       <block type="math_constrain">
         <value name="LOW">
@@ -427,6 +427,43 @@ function init() {
     </category>
     <category name="Text">
       <block type="text"></block>
+      <block type="text_join"></block>
+      <block type="text_append">
+        <value name="TEXT">
+          <block type="text"></block>
+        </value>
+      </block>
+      <block type="text_length"></block>
+      <block type="text_isEmpty"></block>
+      <!--<block type="text_indexOf">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">text</field>
+          </block>
+        </value>
+      </block>
+      <block type="text_charAt">
+        <value name="VALUE">
+          <block type="variables_get">
+            <field name="VAR">text</field>
+          </block>
+        </value>
+      </block>
+      <block type="text_getSubstring">
+        <value name="STRING">
+          <block type="variables_get">
+            <field name="VAR">text</field>
+          </block>
+        </value>
+      </block>
+      <block type="text_changeCase"></block>-->
+      <block type="text_trim"></block>
+      <block type="text_print"></block>
+      <block type="text_prompt_ext">
+        <value name="TEXT">
+          <block type="text"></block>
+        </value>
+      </block>
     </category>
     <category name="Variables" custom="VARIABLE"></category>
     <category name="Functions" custom="PROCEDURE"></category>
